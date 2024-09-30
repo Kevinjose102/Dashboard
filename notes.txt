@@ -1,0 +1,22 @@
+####characters
+the knight
+hornet
+the hollow knight
+grimm 
+the mantis lords
+soul master
+
+
+####areas
+forgotten crossroads
+greenpath
+fungal wastes
+
+
+####items
+masked shards
+masked fragments
+charms
+
+
+######ADD THE LORE IN THE NAVBAR
