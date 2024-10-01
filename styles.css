@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./images/Screenshot\ from\ 2024-09-30\ 21-48-59.png");
+    background-image: url("./images/Screenshot\ from\ 2024-09-30\ 21-57-21.png");
 }
 
 .logo{
@@ -66,6 +66,7 @@ body{
     padding: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 40px;
     background-color: black;
 }
@@ -103,4 +104,34 @@ a:focus{
 }
 a{
     color: white;
+}
+
+.characters{
+    background-position: left;
+    background-size: 100% 100%;
+}
+
+.knight{
+    background-image: url("./images/knight.png");
+}
+
+
+.hornet{
+    background-image: url("./images/hornet.jpg");
+}
+
+.hollow-knight{
+    background-image: url("./images/hollow-knight.webp");
+}
+
+.grimm{
+    background-image: url("./images/grimm.png");
+}
+
+.mantis-lords{
+    background-image: url("./images/mantis-lords.webp");
+}
+
+.soul-master{
+    background-image: url("./images/Screenshot\ from\ 2024-09-30\ 21-48-59.png");
 }
