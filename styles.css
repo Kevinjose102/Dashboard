@@ -21,8 +21,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 5fr 1.5fr;
     grid-template-rows: 2fr 10fr 1fr;
+    background-color: #000000;
 }
-
 
 .header{
     grid-column: 2 / 4;
@@ -47,7 +47,6 @@ body{
     display: grid;
     grid-template-rows: 3fr repeat(5, 1fr) 10fr;
     gap: 40px;
-    background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -68,11 +67,9 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
-    background-color: black;
 }
 
 .article > div{
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -83,7 +80,6 @@ body{
     grid-template-rows: repeat(2, 1fr);
     padding: 40px;
     gap: 40px;
-    background-color: black;
 }
 
 .sidebar > div{
@@ -115,6 +111,13 @@ a{
     background-image: url("./images/knight.png");
 }
 
+h3{
+    background-color: #0000007b;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
 
 .hornet{
     background-image: url("./images/hornet.jpg");
@@ -129,7 +132,8 @@ a{
 }
 
 .mantis-lords{
-    background-image: url("./images/mantis-lords.webp");
+    background-image: url("./images/mantis-lords.png");
+    
 }
 
 .soul-master{
