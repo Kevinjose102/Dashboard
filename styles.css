@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Trojan;
+    src: url("./Trajan\ Pro\ Regular.ttf");
+}
+
+
 *{
     box-sizing: border-box;
 }
@@ -19,9 +25,10 @@ body{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr 1.5fr;
+    grid-template-columns: 1fr 7fr 2fr;
     grid-template-rows: 2fr 10fr 1fr;
     background-color: #000000;
+    font-family: Trojan;
 }
 
 .header{
@@ -48,13 +55,32 @@ body{
     grid-template-rows: 3fr repeat(6, 1fr) 10fr;
     gap: 40px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding-left: 40px;
+    font-family: Trojan;
+    font-size: 23px;
+    padding-left: 20px;
     padding-top: 50px;
+}
+.option{
+    padding: 13px;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.option:hover{
+    color: rgb(71, 151, 217);
+    cursor: pointer;
+    background-color: rgba(78, 78, 78, 0.178);
+    border-radius: 20px;
+   
+}
+.option > a:hover{
+    color: rgb(71, 151, 217);
 }
 
 .the-knight{
+    width: 150px;
+    margin-left: 30px;
     transform: scale(1.1);
 }
 
@@ -67,6 +93,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
+    font-family: Trojan;
 }
 
 .article > div{
@@ -90,7 +117,11 @@ body{
     background-color: black;
     text-align: center;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
+}
+
+.footer > a:hover{
+    color: rgb(71, 151, 217);
 }
 
 a:focus{
@@ -147,6 +178,7 @@ h3{
     background-image: url("./images/Screenshot\ from\ 2024-09-30\ 21-48-59.png");
 }
 
+
 .areas{
     display: grid;
     padding: 20px;
@@ -188,11 +220,15 @@ h3{
 
 .items > div{
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 35% 65%;
     color: white;
     font-size: 30px;
+    transition: all ease-in-out 0.14s;
 }
-
+.items > div:hover{
+    font-size: 33px;
+    cursor: pointer;
+}
 .text{
     padding-top: 20px;
     text-align: left;
