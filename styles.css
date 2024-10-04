@@ -3,30 +3,28 @@
     src: url("./Trajan\ Pro\ Regular.ttf");
 }
 
-
 *{
     box-sizing: border-box;
 }
 
 html{
     width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body{
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
 .container{
     width: 100%;
-    height: 100%;
+    height:fit-contentz;
     display: grid;
     grid-template-columns: 1fr 7fr 2fr;
-    grid-template-rows: 5fr 10fr 1fr;
+    grid-template-rows: 1fr 6fr;
     background-color: #000000;
     font-family: Trojan;
 }
@@ -34,6 +32,7 @@ body{
 .header{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    max-height: 130px;
     background-color: #000000;
     padding: 0;
     margin: 0;
@@ -42,6 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url("./images/Screenshot\ from\ 2024-09-30\ 21-57-21.png");
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -58,6 +58,8 @@ body{
     font-size: 23px;
     padding-left: 20px;
     padding-top: 50px;
+    max-height: 1000px;
+    margin-right: 10px;
 }
 .option{
     padding: 15px;
@@ -94,10 +96,14 @@ body{
     gap: 40px;
     font-family: Trojan;
     margin-top: 0;
+    max-height: 900px;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 .article > div{
     border-radius: 30px;
+    max-height: 400px;
 }
 
 .sidebar{
@@ -105,7 +111,8 @@ body{
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 30px;
+    max-height: 1000px;
 }
 
 .sidebar > div{
@@ -113,7 +120,7 @@ body{
 }
 
 .footer{
-    grid-column: 1 / 4;
+    font-family: Trojan;
     background-color: black;
     text-align: center;
     color: white;
@@ -224,6 +231,7 @@ h3{
     padding: 20px;
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    padding-right: 40px;
 }
 
 .areas > div{
@@ -256,6 +264,7 @@ h3{
     padding: 20px;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    padding-right: 40px;
 }
 
 .items > div{
@@ -274,4 +283,27 @@ h3{
     text-align: left;
 }
 
+@media only screen and (max-width: 1500px) {
+    .article{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .article > div{
+        min-width: 300px;
+    }
+    .navbar{
+        max-width: 160px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .article{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        min-width: 420px;
+    }
+    .article > div{
+        min-height: 350px;
+    }
+}
 
